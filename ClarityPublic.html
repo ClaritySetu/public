@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaritySetu Public</title>
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --slate-900: #0f172a;
+            --slate-600: #475569;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--slate-900);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--slate-600);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 900px;
+            padding: 0 2rem 4rem;
+        }
+
+        .nav-card {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--slate-900);
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+            color: var(--primary-blue);
+        }
+
+        .nav-card span {
+            font-size: 1.25rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            h1 { font-size: 2rem; }
+            .button-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ClaritySetu Public</h1>
+        <p class="subtitle">Access educational modules and specialized toolsets.</p>
+    </header>
+
+    <main class="button-container">
+        <a href="interior-design-math.html" class="nav-card">
+            <span>Interior Design Math</span>
+        </a>
+
+        <a href="#" class="nav-card">
+            <span>Project Management</span>
+        </a>
+
+        <a href="#" class="nav-card">
+            <span>Architectural Drafting</span>
+        </a>
+
+        <a href="#" class="nav-card">
+            <span>Public Resources</span>
+        </a>
+    </main>
+
+</body>
+</html>
